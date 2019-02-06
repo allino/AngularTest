@@ -1,0 +1,8 @@
+<h1>Test Page</h1>
+
+<p>Current count: <strong>{{ currentCount }}</strong></p>
+
+<button (click)="incrementCounter()">Increment</button>
+
+<internal-counter-component [name]="name1" [globalCount]="currentCount" (setglobal)="reset($event)"></internal-counter-component>
+<internal-counter-component [name]="name2" [globalCount]="currentCount" (setglobal)="reset($event)"></internal-counter-component>
